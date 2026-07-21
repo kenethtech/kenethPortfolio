@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}About me{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="display-5 fw-bold text-center mb-5 section-title">About Me</h1>
+    
+    <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+            <img src="{{url_for('static', filename='images/ken_1141.JPG')}}" alt="Profile" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-lg-7">
+            <p class="lead">
+                Highly motivated software developer with a strong foundation in Computer Science and a passion for 
+                Artificial Intelligence and Machine Learning.
+            </p>
+            <p>
+                I specialize in building full-stack AI-powered applications using Python, LangChain, RAG pipelines, 
+                and modern frameworks. With experience across multiple client projects, I focus on delivering 
+                scalable, maintainable, and high-quality solutions.
+            </p>
+            
+            <h4 class="mt-5 mb-4">Education</h4>
+            <ul class="list-unstyled">
+                <li><strong>B.Sc. Computer Science</strong> — Maseno University (2017–2021)</li>
+                <li><strong>Advanced Diploma in Python Programming</strong> — Alison Courses (2025–2026)</li>
+            </ul>
+
+            <h4 class="mt-5 mb-4">Certifications</h4>
+            <ul class="list-unstyled">
+                <li><strong>Cisco Certified Network Associate(CCNA 1-4)</strong> — Cisco netacademy (2019–2021)</li>
+            </ul>
+
+            <h4 class="mt-5 mb-4">Key Skills</h4>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge skill-badge fs-6 px-3 py-2">Python</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">LangChain</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">RAG</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">LLMs (Groq, Llama)</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">MCP</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">Flask</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">PostgreSQL</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">Docker</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">AWS / Cloud</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">REST APIs</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">Vector DBs</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">PHP</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">Javascript</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">CI/CD</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">WordPress Development</span>
+                <span class="badge skill-badge fs-6 px-3 py-2">Machine Learning</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

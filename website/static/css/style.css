@@ -1,0 +1,95 @@
+
+:root {
+    --primary: #0d6efd;
+    --primary-dark: #0b5ed7;
+    --dark: #0f172a;
+    --light: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #0a0f1c;
+    color: #e2e8f0;
+    line-height: 1.7;
+}
+
+.navbar {
+    background: rgba(10, 15, 28, 0.97) !important;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1030;
+}
+
+.hero {
+    background: linear-gradient(rgba(10, 15, 28, 0.85), rgba(10, 15, 28, 0.9)), 
+                url('https://picsum.photos/id/1015/1920/1080') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary), #60a5fa);
+    border-radius: 2px;
+}
+
+.project-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #1e2937;
+    border: none;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+}
+
+.skill-badge {
+    background: rgba(13, 110, 253, 0.15);
+    color: #93c5fd;
+    border: 1px solid rgba(147, 197, 253, 0.3);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    background: rgba(13, 110, 253, 0.3);
+    transform: scale(1.05);
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+footer {
+    background: #05070f;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}

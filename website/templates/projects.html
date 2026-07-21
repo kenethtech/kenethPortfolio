@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="display-5 fw-bold text-center mb-5 section-title">Featured Projects</h1>
+    
+    <div class="row g-4">
+        <!-- ResumeForger -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 bg-light-subtle border-0 shadow">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">ResumeForger</h5>
+                    <p class="card-text bg-light">AI-powered resume &amp; cover letter builder with ATS optimization using LangChain + Groq Llama 3.3.</p>
+                    <a href="https://resumeforger-production.up.railway.app/" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Masterspredict -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 bg-light border-0 shadow">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Masterspredict</h5>
+                    <p class="card-text">Subscription-based football prediction platform with M-Pesa &amp; PayPal integration.</p>
+                    <a href="https://masterspredict.onrender.com/" target="_blank" class="btn btn-sm btn-outline-primary">Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repurposify -->
+        <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 bg-light border-0 shadow">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Repurposify</h5>
+                    <p class="card-text">AI SaaS tool that repurposes long-form content into Twitter threads, LinkedIn posts, etc.</p>
+                    <span class="badge bg-success">Featured</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero min-vh-100 d-flex align-items-center text-center text-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <img src="{{url_for('static', filename='images/ken_1141.JPG')}}" alt="Keneth Njoroge" 
+                     class="rounded-circle mb-4 border border-5 border-primary shadow" style="width: 220px; height: 220px; object-fit: cover;">
+                <h1 class="display-3 fw-bold mb-3">Keneth Mureithi Njoroge</h1>
+                <h2 class="h3 mb-4 text-primary">Full-Stack Software Engineer &amp; AI Developer</h2>
+                <p class="lead mb-5 col-lg-8 mx-auto">
+                    Passionate about building intelligent, scalable applications using Python, LLMs, RAG, 
+                    and modern web technologies. Turning ideas into production-ready solutions.
+                </p>
+                <div>
+                    <a href="/projects" class="btn btn-primary btn-lg px-5 me-3">Explore Projects</a>
+                    <a href="/contact" class="btn btn-outline-light btn-lg px-5">Let's Connect</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row text-center g-5">
+            <div class="col-md-4">
+                <h3 class="text-primary">3+</h3>
+                <p class="text-muted">Years of Professional Experience</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-primary">15+</h3>
+                <p class="text-muted">Projects Delivered</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="text-primary">Python Backend Engineering • AI/ML Engineering • Full-Stack Web development</h3>
+                <p class="text-muted">Core Expertise</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
