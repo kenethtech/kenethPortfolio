@@ -20,4 +20,4 @@ def my_projects():
 
 @views.route('/resume')
 def resume():
-    return send_file("static/assets/Keneth_resume.pdf", as_attachment=True)
+    return send_file("static/assets/Keneth_njoroge_resume.pdf", as_attachment=True)
