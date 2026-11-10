@@ -4,7 +4,7 @@ A modern, responsive, and eye-catching personal portfolio website built with **F
 
 Designed to showcase my skills as a **Software Engineer** with a strong focus on **AI**, **Machine Learning**, and **Full-Stack Development**.
 
-![Portfolio Preview](https://keneth-portfolio-grandistechconsultancy.vercel.app)
+[Portfolio Preview](https://keneth-portfolio-grandistechconsultancy.vercel.app)
 
 ## ✨ Features
 
